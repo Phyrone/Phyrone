@@ -17,3 +17,7 @@ jobs:
       - uses: lowlighter/metrics@latest
         with:
           token: ${{ secrets.METRICS_GH_TOKEN }}
+
+          # Habits (https://github.com/lowlighter/metrics/blob/master/source/plugins/habits/README.md) 
+          plugin_habits: true
+          
