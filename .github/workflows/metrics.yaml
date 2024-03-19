@@ -18,6 +18,15 @@ jobs:
         with:
           token: ${{ secrets.METRICS_GH_TOKEN }}
 
+          #PageSpeed (https://github.com/lowlighter/metrics/blob/master/source/plugins/pagespeed/README.md) 
+          plugin_pagespeed: true
+          plugin_pagespeed_url: https://www.phyrone.de/
+          plugin_pagespeed_detailed: true
+          plugin_pagespeed_pwa: false
+
           # Habits (https://github.com/lowlighter/metrics/blob/master/source/plugins/habits/README.md) 
           plugin_habits: true
+          plugin_habits_facts: true
+          plugin_habits_charts: true
+          config_timezone: Europe/Berlin
           
