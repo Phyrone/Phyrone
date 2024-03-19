@@ -17,7 +17,7 @@ jobs:
       - uses: lowlighter/metrics@latest
         with:
           token: ${{ secrets.METRICS_GH_TOKEN }}
-
+          
           #PageSpeed (https://github.com/lowlighter/metrics/blob/master/source/plugins/pagespeed/README.md) 
           plugin_pagespeed: true
           plugin_pagespeed_url: https://www.phyrone.de/
@@ -29,4 +29,8 @@ jobs:
           plugin_habits_facts: true
           plugin_habits_charts: true
           config_timezone: Europe/Berlin
+
+          # Languages (https://github.com/lowlighter/metrics/blob/master/source/plugins/languages/README.md)
+          plugin_languages: true
+          
           
