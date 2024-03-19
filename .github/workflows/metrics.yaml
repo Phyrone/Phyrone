@@ -18,6 +18,8 @@ jobs:
         with:
           token: ${{ secrets.METRICS_GH_TOKEN }}
 
+          base_indepth: true
+
           #PageSpeed (https://github.com/lowlighter/metrics/tree/master/source/plugins/pagespeed) 
           plugin_pagespeed: true
           plugin_pagespeed_url: https://www.phyrone.de/
@@ -33,4 +35,21 @@ jobs:
 
           # Lines (https://github.com/lowlighter/metrics/tree/master/source/plugins/lines)
           plugin_lines: true
+
+          # Languages (https://github.com/lowlighter/metrics/tree/master/source/plugins/languages)
+          plugin_languages: true
+          plugin_languages_indepth: true
+          plugin_languages_sections: most-used,recently-used
+
+          # AniList (https://github.com/lowlighter/metrics/tree/master/source/plugins/anilist)
+          plugin_anilist: true
+          plugin_anilist_user: phyrone
+
+          # Music(https://github.com/lowlighter/metrics/tree/master/source/plugins/music)
+          #plugin_music: true
+          #plugin_music_provider: spotify
+          #plugin_music_user: nemo.mus
+          
+          
+          
           
