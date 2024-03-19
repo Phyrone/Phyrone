@@ -24,7 +24,9 @@ jobs:
           # experimental_features: --optimize-svg
           config_output: markdown
           markdown_cache: .cache
-          
+
+          # Introduction (https://github.com/lowlighter/metrics/tree/master/source/plugins/introduction)
+          plugin_introduction: yes
           # IsometricCalendar (https://github.com/lowlighter/metrics/tree/master/source/plugins/isocalendar)
           plugin_isocalendar: true
           
