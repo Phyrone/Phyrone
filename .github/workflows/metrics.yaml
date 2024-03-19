@@ -20,10 +20,9 @@ jobs:
 
           base_indepth: true
           base_hireable: true
-          optimize: svg,css,xml
-          experimental_features: --optimize-svg
-          
-          
+          # optimize: svg,css,xml
+          # experimental_features: --optimize-svg
+          config_output: markdown
           
           # IsometricCalendar (https://github.com/lowlighter/metrics/tree/master/source/plugins/isocalendar)
           plugin_isocalendar: true
@@ -54,10 +53,13 @@ jobs:
           plugin_anilist: true
           plugin_anilist_user: phyrone
 
-          # Music(https://github.com/lowlighter/metrics/tree/master/source/plugins/music)
+          # Music (https://github.com/lowlighter/metrics/tree/master/source/plugins/music)
           #plugin_music: true
           #plugin_music_provider: spotify
           #plugin_music_user: nemo.mus
+
+          # Skyline (https://github.com/lowlighter/metrics/tree/master/source/plugins/skyline)
+          plugin_skyline: true
           
           
           
