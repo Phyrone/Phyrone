@@ -19,7 +19,15 @@ jobs:
           token: ${{ secrets.METRICS_GH_TOKEN }}
 
           base_indepth: true
-
+          base_hireable: true
+          optimize: svg
+          experimental_features: --optimize-svg
+          
+          
+          # IsometricCalendar (https://github.com/lowlighter/metrics/tree/master/source/plugins/isocalendar)
+          plugin_isocalendar: true
+          
+          
           #PageSpeed (https://github.com/lowlighter/metrics/tree/master/source/plugins/pagespeed) 
           plugin_pagespeed: true
           plugin_pagespeed_url: https://www.phyrone.de/
